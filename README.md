@@ -24,7 +24,11 @@
   下载代码：`git clone https://github.com/IntelLabs/pWord2Vec`
   
   运行 `.\install.sh` 来构建包 此安装尝试生成两个二进制文件：pWord2Vec 和 pWord2Vec_mpi。若不设置 mpi，编译当然会在构建pWord2Vec_mpi时失败。非 mpi 二进制文件仍可用
+  
   下载数据：`cd data; .\getText8.sh or .\getBillion.sh`
+  
   运行演示脚本：`cd sandbox; ./run_single_text8.sh (for single machine demo) or ./run_mpi_text8.sh (for distributed w2v demo)`
-  在 1 亿字基准上运行代码：`cd billion; ./run_single.sh (for single machine w2v) or ./run_mpi.sh (for distributed w2v) (please set ncores=number of logical cores of your machine)
-  评估模型：cd sandbox; ./eval.sh or cd billion; ./eval.sh`
+  
+  在 1 亿字基准上运行代码：`cd billion; ./run_single.sh (for single machine w2v) or ./run_mpi.sh (for distributed w2v) (please set ncores=number of logical cores of your machine)`
+  
+  评估模型：`cd sandbox; ./eval.sh or cd billion; ./eval.sh`
